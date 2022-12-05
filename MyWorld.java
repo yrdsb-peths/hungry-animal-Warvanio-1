@@ -17,5 +17,15 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
+        
+        Dolphin dolphin = new Dolphin ();
+        addObject(dolphin, 300, 200);
+        
     }
+}
+
+public void createBread()
+{
+        Bread bread = new Bread();
+        addObject(bread, 200, 300);
 }
