@@ -11,6 +11,7 @@ public class Bread extends Actor
     /**
      * Act - do whatever the Bread wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
+     * The bread class
      */
     public void act() 
     {
