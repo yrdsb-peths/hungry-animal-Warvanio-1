@@ -19,11 +19,22 @@ public class Dolphin extends Actor
         {
             move(-5);
         }
-        else if(Greenfoot.isKeyDown("Right"))
+        else if(Greenfoot.isKeyDown("right"))
         {
             move(5);
         }
         
-        removeTouching(Bread.class);
+        eat();
+    }
+    //eats apple spawns new one
+    public void eat()
+    {
+        if(isTouching(Bread.class))
+        {
+            removeTouching(Bread.class);
+            MyWorld world = (MyWorld) getWorld();
+            world.createBread();
+            world.increaseScore();
+        }
     }
 }
